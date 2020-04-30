@@ -12,12 +12,16 @@ public class PizzaOrderer{
     PizzaOrder order = new PizzaOrder();
     PizzaCommand deepDish = new DeepDishCommand(order);
     PizzaCommand thinCrust = new ThinCrustCommand(order);
+    PizzaCommand marioPizza = new MarioPizzaCommand(order);
     // Order a deep Dish pizza
     control.setCommand(deepDish);
     control.submitOrder();
 
     // Order a thinCrust pizza
     control.setCommand(thinCrust);
+    control.submitOrder();
+    // order a mario pizza
+    control.setCommand(marioPizza);
     control.submitOrder();
   }
 }
