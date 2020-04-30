@@ -24,7 +24,13 @@ public class PizzaOrder{
     p = pb.pizzas(1).build();
     reportOrder();
   }
-
+  public void bakeIrenePizza()
+  {
+    System.out.format("Baking an Irene style pizzza... \n");
+    pb = new Pizza.Builder("Irene style Crust");
+    p = pb.pizzas(1).build();
+    reportOrder();
+  }
   public void bakeMarioPizza(){
     System.out.format("Baking a Mario pizza...\n");
     pb = new Pizza.Builder("Mario Pizza");
